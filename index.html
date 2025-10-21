@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Murilo Oliveira - Desenvolvedor Full-Stack</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 text-white">
+  <!-- Header Fixed -->
+  <header class="fixed w-full top-0 z-50 glass-effect shadow-lg transition-all duration-300" id="header">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <h1 class="text-2xl font-bold gradient-text">Murilo Oliveira</h1>
+        <nav class="hidden md:flex space-x-8 text-lg">
+          <a href="#home" class="nav-link hover:text-purple-400 transition-colors duration-300">Home</a>
+          <a href="#sobre" class="nav-link hover:text-purple-400 transition-colors duration-300">Sobre</a>
+          <a href="#habilidades" class="nav-link hover:text-purple-400 transition-colors duration-300">Habilidades</a>
+          <a href="#projetos" class="nav-link hover:text-purple-400 transition-colors duration-300">Projetos</a>
+          <a href="#contato" class="nav-link hover:text-purple-400 transition-colors duration-300">Contato</a>
+        </nav>
+        <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="fixed inset-0 bg-black bg-opacity-95 z-40 hidden flex-col items-center justify-center space-y-8 text-2xl">
+    <a href="#home" class="mobile-link hover:text-purple-400 transition-colors">Home</a>
+    <a href="#sobre" class="mobile-link hover:text-purple-400 transition-colors">Sobre</a>
+    <a href="#habilidades" class="mobile-link hover:text-purple-400 transition-colors">Habilidades</a>
+    <a href="#projetos" class="mobile-link hover:text-purple-400 transition-colors">Projetos</a>
+    <a href="#contato" class="mobile-link hover:text-purple-400 transition-colors">Contato</a>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scrollProgress" class="scroll-progress"></div>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+    <div class="absolute inset-0 opacity-20">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    
+    <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <h2 class="text-5xl md:text-7xl font-bold mb-6 animate-fadeInUp typing-text">
+        Olá, eu sou <span class="gradient-text">Murilo</span>
+      </h2>
+      <p class="text-2xl md:text-3xl mb-4 animate-fadeInUp delay-200">Desenvolvedor Full-Stack</p>
+      <p class="text-lg md:text-xl text-gray-300 mb-8 animate-fadeInUp delay-300 max-w-2xl mx-auto">
+        Transformando ideias em soluções digitais elegantes e escaláveis
+      </p>
+      <div class="flex gap-4 justify-center animate-fadeInUp delay-400">
+        <a href="#projetos" class="btn-primary">
+          Ver Projetos
+        </a>
+        <a href="#contato" class="btn-secondary">
+          Entre em Contato
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Section -->
+  <section id="sobre" class="section py-20 px-6">
+    <div class="container mx-auto max-w-6xl">
+      <h3 class="text-4xl md:text-5xl font-bold mb-12 text-center">
+        <span class="gradient-text">Sobre Mim</span>
+      </h3>
+      
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6 text-lg text-gray-300">
+          <p class="leading-relaxed animate-slideInLeft">
+            Comecei minha jornada na programação em <span class="text-purple-400 font-semibold">2019</span>, desenvolvendo projetos pessoais e acadêmicos. Desde então, tenho me aprofundado em tecnologias modernas de desenvolvimento web.
+          </p>
+          <p class="leading-relaxed animate-slideInLeft delay-200">
+            Meu objetivo é criar <span class="text-purple-400 font-semibold">aplicações web</span> que sejam não apenas funcionais, mas também agradáveis de usar, sempre buscando aprender novas tecnologias e melhores práticas.
+          </p>
+          <p class="leading-relaxed animate-slideInLeft delay-300">
+            Atualmente focado em me tornar um <span class="text-purple-400 font-semibold">desenvolvedor full-stack completo</span>, dominando tanto front-end quanto back-end.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-2 gap-6">
+          <div class="stat-card" data-target="6">
+            <div class="text-4xl mb-2">🚀</div>
+            <div class="text-3xl font-bold text-purple-400 counter">0</div>
+            <div class="text-sm text-gray-400">Anos de Experiência</div>
+          </div>
+          <div class="stat-card" data-target="15">
+            <div class="text-4xl mb-2">💻</div>
+            <div class="text-3xl font-bold text-purple-400 counter">0</div>
+            <div class="text-sm text-gray-400">Projetos Concluídos</div>
+          </div>
+          <div class="stat-card" data-target="13">
+            <div class="text-4xl mb-2">🎯</div>
+            <div class="text-3xl font-bold text-purple-400 counter">0</div>
+            <div class="text-sm text-gray-400">Tecnologias</div>
+          </div>
+          <div class="stat-card" data-target="100">
+            <div class="text-4xl mb-2">⭐</div>
+            <div class="text-3xl font-bold text-purple-400 counter">0</div>
+            <div class="text-sm text-gray-400">Dedicação</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades Section -->
+  <section id="habilidades" class="section py-20 px-6 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="skill-blob skill-blob-1"></div>
+      <div class="skill-blob skill-blob-2"></div>
+    </div>
+    
+    <div class="container mx-auto max-w-6xl relative z-10">
+      <h3 class="text-4xl md:text-5xl font-bold mb-6 text-center">
+        <span class="gradient-text">Habilidades</span>
+      </h3>
+      <p class="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
+        Tecnologias e ferramentas que domino para criar soluções completas
+      </p>
+      
+      <div class="flex flex-wrap justify-center gap-4" id="skillsContainer">
+        <span class="skill-tag" data-skill="JavaScript" style="--delay: 0s;">JavaScript</span>
+        <span class="skill-tag" data-skill="Node.js" style="--delay: 0.1s;">Node.js</span>
+        <span class="skill-tag" data-skill="TypeScript" style="--delay: 0.2s;">TypeScript</span>
+        <span class="skill-tag" data-skill="React.js" style="--delay: 0.3s;">React.js</span>
+        <span class="skill-tag" data-skill="Vue.js" style="--delay: 0.4s;">Vue.js</span>
+        <span class="skill-tag" data-skill="Angular" style="--delay: 0.5s;">Angular</span>
+        <span class="skill-tag" data-skill="HTML5" style="--delay: 0.6s;">HTML5</span>
+        <span class="skill-tag" data-skill="CSS3" style="--delay: 0.7s;">CSS3</span>
+        <span class="skill-tag" data-skill="SQL" style="--delay: 0.8s;">SQL</span>
+        <span class="skill-tag" data-skill="Java" style="--delay: 0.9s;">Java</span>
+        <span class="skill-tag" data-skill="C#" style="--delay: 1s;">C#</span>
+        <span class="skill-tag" data-skill="Python" style="--delay: 1.1s;">Python</span>
+        <span class="skill-tag" data-skill="Bootstrap" style="--delay: 1.2s;">Bootstrap</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos Section -->
+  <section id="projetos" class="section py-20 px-6">
+    <div class="container mx-auto max-w-6xl">
+      <h3 class="text-4xl md:text-5xl font-bold mb-6 text-center">
+        <span class="gradient-text">Projetos</span>
+      </h3>
+      <p class="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
+        Alguns dos projetos que desenvolvi para aprimorar minhas habilidades
+      </p>
+      
+      <!-- Filtro de projetos -->
+      <div class="flex justify-center gap-4 mb-12 flex-wrap">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="backend">Back-end</button>
+        <button class="filter-btn" data-filter="frontend">Front-end</button>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-8" id="projectsContainer">
+        <div class="project-card" data-category="frontend">
+          <div class="flex items-center mb-4">
+            <div class="text-4xl mr-4">🎮</div>
+            <h4 class="text-2xl font-bold">Flappy Bird</h4>
+          </div>
+          <p class="text-gray-300 mb-4 leading-relaxed">
+            Recriação fiel do clássico jogo Flappy Bird usando JavaScript puro. Implementação de física, colisões e sistema de pontuação.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+          </div>
+          <a href="https://github.com/MuriloOz/Flappy-Bird" target="_blank"
+             class="project-link">
+            Ver Projeto →
+          </a>
+        </div>
+
+        <div class="project-card" data-category="frontend">
+          <div class="flex items-center mb-4">
+            <div class="text-4xl mr-4">🔐</div>
+            <h4 class="text-2xl font-bold">Projeto Login</h4>
+          </div>
+          <p class="text-gray-300 mb-4 leading-relaxed">
+            Interface de login moderna e responsiva com design clean. Foco em UX/UI e acessibilidade, utilizando apenas HTML e CSS.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+          </div>
+          <a href="https://github.com/MuriloOz/Projeto-login" target="_blank"
+             class="project-link">
+            Ver Projeto →
+          </a>
+        </div>
+
+        <div class="project-card" data-category="frontend">
+          <div class="flex items-center mb-4">
+            <div class="text-4xl mr-4">✅</div>
+            <h4 class="text-2xl font-bold">To-Do List</h4>
+          </div>
+          <p class="text-gray-300 mb-4 leading-relaxed">
+            Aplicação de lista de tarefas interativa desenvolvida com React. Sistema completo de CRUD com interface moderna e intuitiva.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Vite</span>
+            <span class="tech-tag">CSS3</span>
+          </div>
+          <a href="https://github.com/MuriloOz/ToDoList" target="_blank" class="project-link">
+            Ver Projeto →
+          </a>
+        </div>
+
+        <div class="project-card" data-category="backend">
+          <div class="flex items-center mb-4">
+            <div class="text-4xl mr-4">✊✋✌️</div>
+            <h4 class="text-2xl font-bold">Pedra, Papel e Tesoura</h4>
+          </div>
+          <p class="text-gray-300 mb-4 leading-relaxed">
+            Um jogo clássico de Pedra, Papel e Tesoura desenvolvido com Python (Flask) no back-end e HTML, CSS e JavaScript no front-end. O projeto possui interface interativa, placar de vitórias e design moderno, perfeito para estudos de desenvolvimento web full-stack.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+          </div>
+          <a href="https://github.com/MuriloOz/Pedra-Papel-e-Tesoura" target="_blank" class="project-link">
+            Ver Projeto →
+          </a>
+        </div>
+
+        <div class="project-card" data-category="backend">
+          <div class="flex items-center mb-4">
+            <div class="text-4xl mr-4">🔄</div>
+            <h4 class="text-2xl font-bold">Unit Converter</h4>
+          </div>
+          <p class="text-gray-300 mb-4 leading-relaxed">
+            O Unit Converter é uma aplicação web desenvolvida com foco em usabilidade e design moderno, oferecendo conversões instantâneas entre diversas unidades de medida. Com interface intuitiva e responsiva, permite conversões rápidas e precisas para uso profissional ou acadêmico.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+          </div>
+          <a href="https://github.com/MuriloOz/Prj-Conversao" target="_blank" class="project-link">
+            Ver Projeto →
+          </a>
+        </div>
+
+        <div class="project-card" data-category="backend">
+          <div class="flex items-center mb-4">
+            <div class="text-4xl mr-4">🧮</div>
+            <h4 class="text-2xl font-bold">CalculadoraJS</h4>
+          </div>
+          <p class="text-gray-300 mb-4 leading-relaxed">
+            Uma calculadora completa desenvolvida com HTML, CSS e JavaScript puro. Ela permite realizar operações matemáticas básicas de forma simples, rápida e com um design moderno e responsivo.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+          </div>
+          <a href="https://github.com/MuriloOz/CalculadoraJS" target="_blank" class="project-link">
+            Ver Projeto →
+          </a>
+        </div>
+
+        <div class="project-card" data-category="frontend">
+          <div class="flex items-center mb-4">
+            <div class="text-4xl mr-4">📜</div>
+            <h4 class="text-2xl font-bold">Projeto Cordel</h4>
+          </div>
+          <p class="text-gray-300 mb-4 leading-relaxed">
+            Bem-vindo ao Projeto Cordel, uma página simples, porém cheia de estilo e poesia, criada utilizando apenas HTML e CSS. Este projeto representa uma fase importante da minha jornada no desenvolvimento web, quando eu estava explorando os fundamentos da construção de páginas estáticas com criatividade.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+          </div>
+          <a href="https://github.com/MuriloOz/ProjetoCordel" target="_blank" class="project-link">
+            Ver Projeto →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato Section -->
+  <section id="contato" class="section py-20 px-6">
+    <div class="container mx-auto max-w-4xl text-center">
+      <h3 class="text-4xl md:text-5xl font-bold mb-6">
+        <span class="gradient-text">Vamos Conversar?</span>
+      </h3>
+      <p class="text-xl text-gray-300 mb-12">
+        Estou sempre aberto a novas oportunidades e desafios
+      </p>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <a href="mailto:murilo.rafael.de.oliveira@gmail.com" 
+           class="contact-card">
+          <div class="text-5xl mb-4 contact-icon">📧</div>
+          <h4 class="text-xl font-bold mb-2">Email</h4>
+          <p class="text-gray-400 text-sm break-all">murilo.rafael.de.oliveira@gmail.com</p>
+        </a>
+        
+        <a href="https://github.com/MuriloOz" target="_blank"
+           class="contact-card">
+          <div class="text-5xl mb-4 contact-icon">💻</div>
+          <h4 class="text-xl font-bold mb-2">GitHub</h4>
+          <p class="text-purple-400">@MuriloOz</p>
+        </a>
+        
+        <a href="https://www.linkedin.com/in/murilo-oliveira-668b36a9/" target="_blank"
+           class="contact-card">
+          <div class="text-5xl mb-4 contact-icon">👔</div>
+          <h4 class="text-xl font-bold mb-2">LinkedIn</h4>
+          <p class="text-purple-400">Murilo Rafael</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 text-center border-t border-gray-800">
+    <p class="text-gray-400">
+      &copy; <span id="currentYear"></span> Desenvolvido por Murilo Almeida.
+    </p>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <button id="scrollToTop" class="scroll-to-top">
+    ↑
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
